@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: #000; /* Black text color for the table */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <figure>
+            <!-- Your figure goes here -->
+            <img src="your_image_url.jpg" alt="Your Image" width="200">
+        </figure>
+        <h1>Your Page Title</h1>
+    </header>
+
+    <section>
+        <p>Your description goes here. This is a space for providing additional information about the content of your page.</p>
+
+        <label for="columnSelect">Select Column:</label>
+        <select id="columnSelect">
+            <option value="0">Name</option>
+            <option value="1">Age</option>
+            <option value="2">City</option>
+            <option value="3">Download</option>
+            <option value="4">Play</option>
+        </select>
+
+        <br>
+
+        <input type="text" id="searchInput" placeholder="Search for data">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Download</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>25</td>
+                    <td>New York</td>
+                    <td><a href="path_to_sound_file.mp3" download>Download</a></td>
+                    <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                    <td><a href="path_to_another_sound_file.mp3" download>Download</a></td>
+                    <td><audio controls><source src="path_to_another_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <p>Additional description or information about the table and its contents.</p>
+    </section>
+
+    <footer>
+        <p>Your footer content goes here.</p>
+    </footer>
+
+    <script>
+        var columnSelect = document.getElementById("columnSelect");
+        var input = document.getElementById("searchInput");
+        var table = document.getElementById("dataTable");
+
+        input.addEventListener("input", function () {
+            var filter = input.value.toUpperCase();
+            var columnIndex = parseInt(columnSelect.value);
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) { // Start from index 1 to skip the header row
+                var cells = rows[i].getElementsByTagName("td");
+                var cellText = cells[columnIndex].textContent || cells[columnIndex].innerText;
+
+                if (cellText.toUpperCase().indexOf(filter) > -1) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
