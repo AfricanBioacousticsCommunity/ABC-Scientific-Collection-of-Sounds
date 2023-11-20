@@ -69,11 +69,16 @@
 
         <label for="columnSelect">Select Column:</label>
         <select id="columnSelect">
-            <option value="0">Common name</option>
-            <option value="1">Scientific name</option>
-            <option value="2">Family</option>
-            <option value="3">Class</option>
+            <option value="0">Catalogue No</option>
+            <option value="1">Popular name</option>
+            <option value="2">Scientific name</option>
+            <option value="3">Family</option>
             <option value="4">Order</option>
+            <option value="5">Class</option>
+            <option value="6">Date</option>
+            <option value="7">Location</option>
+            
+            
         </select>
 
         <br>
@@ -83,13 +88,17 @@
         <table id="dataTable">
             <thead>
                 <tr>
-                    <th>Common name</th>
+                    <th>Catalogue No</th>
+                    <th>Popular name</th>
                     <th>Scientific name</th>
                     <th>Family</th>
-                    <th>Class</th>
                     <th>Order</th>
+                    <th>Class</th>
+                    <th>Date</th>
+                    <th>Location</th>
                     <th>Play</th>
-                    <th>Download</th>
+                    <th>Audio</th>
+                    <th>Annotation</th>
                 </tr>
             </thead>
             <tbody>
@@ -97,15 +106,27 @@
                     <td>John Doe</td>
                     <td>25</td>
                     <td>New York</td>
-                    <td><a href="path_to_sound_file.mp3" download>Download</a></td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>                    
                     <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                    <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                    <td><a href="path_to_annotation_file.txt" download>📄</a></td>
                 </tr>
                 <tr>
-                    <td>Jane Doe</td>
-                    <td>30</td>
-                    <td>Los Angeles</td>
-                    <td><a href="path_to_another_sound_file.mp3" download>Download</a></td>
-                    <td><audio controls><source src="path_to_another_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                    <td>John Doe</td>
+                    <td>25</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>New York</td>                    
+                    <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                    <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                    <td><a href="path_to_annotation_file.txt" download>📄</a></td>
                 </tr>
                 <!-- Add more rows as needed -->
             </tbody>
