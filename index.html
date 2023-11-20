@@ -77,220 +77,219 @@
         }
     </style>
 </head>
-<body>
-    <main>
+<body>   
 
-        <header>
-            <figure>
-                <!-- Your figure goes here -->
-                <img src="ABC LOGO transparent - simple.png" alt="ABC logo" width="300" height="300">
-            </figure>
-            <h1>Scientific Collection of Sounds of the African Bioacoustics Community</h1>
-        </header>
-    
-        <section> 
-            
-                <p>The Scientific Collection of Sounds of the <a href="https://www.africanbioacoustics.org/">African Bioacoustics Community</a> is the first freely available source of bioacoustic data from southern Africa. For more information <a href="mailto:africanbioacoustics@gmail.com">contact us</a></p>
-            
-                <label for="columnSelect">Select Column:</label>
-                <select id="columnSelect">
-                    <option value="0">Catalogue No</option>
-                    <option value="1">Popular name</option>
-                    <option value="2">Scientific name</option>
-                    <option value="3">Family</option>
-                    <option value="4">Order</option>
-                    <option value="5">Class</option>
-                    <option value="6">Date</option>
-                    <option value="7">Locality</option>
+    <header>
+        <figure>
+            <!-- Your figure goes here -->
+            <img src="ABC LOGO transparent - simple.png" alt="ABC logo" width="300" height="300">
+        </figure>
+        <h1>Scientific Collection of Sounds of the African Bioacoustics Community</h1>
+    </header>
+
+    <section> 
+        
+            <p>The Scientific Collection of Sounds of the <a href="https://www.africanbioacoustics.org/">African Bioacoustics Community</a> is the first freely available source of bioacoustic data from southern Africa. For more information <a href="mailto:africanbioacoustics@gmail.com">contact us</a></p>
+        
+            <label for="columnSelect">Select Column:</label>
+            <select id="columnSelect">
+                <option value="0">Catalogue No</option>
+                <option value="1">Popular name</option>
+                <option value="2">Scientific name</option>
+                <option value="3">Family</option>
+                <option value="4">Order</option>
+                <option value="5">Class</option>
+                <option value="6">Date</option>
+                <option value="7">Locality</option>
+                
+                
+            </select>
+        
+            <br>
+        
+            <input type="text" id="searchInput" placeholder="Search for data">
+        
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Catalogue No</th>
+                        <th>Popular name</th>
+                        <th>Scientific name</th>
+                        <th>Family</th>
+                        <th>Order</th>
+                        <th>Class</th>
+                        <th>Date</th>
+                        <th>Locality</th>
+                        <th>Play</th>
+                        <th>Audio</th>
+                        <th>Annotation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC0001</td>
+                        <td>African Wild Dog</td>
+                        <td><i>Lycaon pictus</i></td>
+                        <td>Canidae</td>
+                        <td>Carnivora</td>
+                        <td>Mammalia</td>
+                        <td>2022/10/11</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0002</td>
+                        <td>African Elephant</td>
+                        <td><i>Loxodonta africana</i></td>
+                        <td>Elephantidae</td>
+                        <td>Proboscidea</td>
+                        <td>Mammalia</td>
+                        <td>2022/10/14</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0003</td>
+                        <td>Red-crested Korhaan</td>
+                        <td><i>Lophotis ruficrista</i></td>
+                        <td>Otididae</td>
+                        <td>Otidiformes</td>
+                        <td>Aves</td>
+                        <td>2022/10/24</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0004</td>
+                        <td>Dark-capped Bulbul</td>
+                        <td><i>Pycnonotus tricolor</i></td>
+                        <td>Pycnonotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0005</td>
+                        <td>Dark-capped Bulbul</td>
+                        <td><i>Pycnonotus tricolor</i></td>
+                        <td>Pycnonotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0006</td>
+                        <td>Black-backed Puffback</td>
+                        <td><i>Dryoscopus cubla</i></td>
+                        <td>Malaconotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0007</td>
+                        <td>Fork-tailed Drongo</td>
+                        <td><i>Dicrurus adsimilis</i></td>
+                        <td>Dicruridae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0008</td>
+                        <td>Grey Go-away-bird</td>
+                        <td><i>Crinifer concolor</i></td>
+                        <td>Musophagidae</td>
+                        <td>Musophagiformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0009</td>
+                        <td>Magpie Shrike</td>
+                        <td><i>Urolestes melanoleucus</i></td>
+                        <td>Laniidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0010</td>
+                        <td>Lilac-breasted Roller</td>
+                        <td><i>Coracias caudatus</i></td>
+                        <td>Coraciidae</td>
+                        <td>Coraciiformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td>ABC0011</td>
+                        <td>Black-crowned Tchagra</td>
+                        <td><i>Tchagra senegalus</i></td>
+                        <td>Malaconotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
+        
                     
+                    <tr>
+                        <td>ABCXXXX</td>
+                        <td>Popular name</td>
+                        <td><i>Scientific name</i></td>
+                        <td>Family</td>
+                        <td>Order</td>
+                        <td>Class</td>
+                        <td>yyyy/mm/dd</td>
+                        <td>Locality</td>                    
+                        <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
+                        <td><a href="path_to_annotation_file.txt" download>📄</a></td>
+                    </tr>
                     
-                </select>
-            
-                <br>
-            
-                <input type="text" id="searchInput" placeholder="Search for data">
-            
-                <table id="dataTable">
-                    <thead>
-                        <tr>
-                            <th>Catalogue No</th>
-                            <th>Popular name</th>
-                            <th>Scientific name</th>
-                            <th>Family</th>
-                            <th>Order</th>
-                            <th>Class</th>
-                            <th>Date</th>
-                            <th>Locality</th>
-                            <th>Play</th>
-                            <th>Audio</th>
-                            <th>Annotation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ABC0001</td>
-                            <td>African Wild Dog</td>
-                            <td><i>Lycaon pictus</i></td>
-                            <td>Canidae</td>
-                            <td>Carnivora</td>
-                            <td>Mammalia</td>
-                            <td>2022/10/11</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0002</td>
-                            <td>African Elephant</td>
-                            <td><i>Loxodonta africana</i></td>
-                            <td>Elephantidae</td>
-                            <td>Proboscidea</td>
-                            <td>Mammalia</td>
-                            <td>2022/10/14</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0003</td>
-                            <td>Red-crested Korhaan</td>
-                            <td><i>Lophotis ruficrista</i></td>
-                            <td>Otididae</td>
-                            <td>Otidiformes</td>
-                            <td>Aves</td>
-                            <td>2022/10/24</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0004</td>
-                            <td>Dark-capped Bulbul</td>
-                            <td><i>Pycnonotus tricolor</i></td>
-                            <td>Pycnonotidae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0005</td>
-                            <td>Dark-capped Bulbul</td>
-                            <td><i>Pycnonotus tricolor</i></td>
-                            <td>Pycnonotidae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0006</td>
-                            <td>Black-backed Puffback</td>
-                            <td><i>Dryoscopus cubla</i></td>
-                            <td>Malaconotidae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0007</td>
-                            <td>Fork-tailed Drongo</td>
-                            <td><i>Dicrurus adsimilis</i></td>
-                            <td>Dicruridae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0008</td>
-                            <td>Grey Go-away-bird</td>
-                            <td><i>Crinifer concolor</i></td>
-                            <td>Musophagidae</td>
-                            <td>Musophagiformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0009</td>
-                            <td>Magpie Shrike</td>
-                            <td><i>Urolestes melanoleucus</i></td>
-                            <td>Laniidae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0010</td>
-                            <td>Lilac-breasted Roller</td>
-                            <td><i>Coracias caudatus</i></td>
-                            <td>Coraciidae</td>
-                            <td>Coraciiformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        <tr>
-                            <td>ABC0011</td>
-                            <td>Black-crowned Tchagra</td>
-                            <td><i>Tchagra senegalus</i></td>
-                            <td>Malaconotidae</td>
-                            <td>Passeriformes</td>
-                            <td>Aves</td>
-                            <td>2023/10/02</td>
-                            <td>Kruger National Park</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-            
-                        
-                        <tr>
-                            <td>ABCXXXX</td>
-                            <td>Popular name</td>
-                            <td><i>Scientific name</i></td>
-                            <td>Family</td>
-                            <td>Order</td>
-                            <td>Class</td>
-                            <td>yyyy/mm/dd</td>
-                            <td>Locality</td>                    
-                            <td><audio controls><source src="path_to_sound_file.mp3" type="audio/mp3">Your browser does not support the audio element.</audio></td>
-                            <td><a href="path_to_sound_file.mp3" download>⬇️</a></td>
-                            <td><a href="path_to_annotation_file.txt" download>📄</a></td>
-                        </tr>
-                        
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            
-                <p><b>Acknowledgements and citations</b><br>The data available in this collection is under CC licenses, thus it is recommended mentioning the recordist of the audio together with the catalogue number and its stable url. We would also appreciate having a mention of the collection's url 'https://africanbioacousticscommunity.github.io/ABC-Sound-Collection.github.io' or our website 'www.africanbioacoustics.org' in your acknowledgments.</p>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        
+            <p><b>Acknowledgements and citations</b><br>The data available in this collection is under CC licenses, thus it is recommended mentioning the recordist of the audio together with the catalogue number and its stable url. We would also appreciate having a mention of the collection's url 'https://africanbioacousticscommunity.github.io/ABC-Sound-Collection.github.io' or our website 'www.africanbioacoustics.org' in your acknowledgments.</p>
                            
             
             
@@ -299,7 +298,7 @@
         <footer>
             <p>Website © 2023 African Bioacoustics Community<br>Recordings © the recorders - see details for each catalogue number</p>
         </footer>
-    </main>
+    
 
     <script>
         var columnSelect = document.getElementById("columnSelect");
