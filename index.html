@@ -105,7 +105,7 @@
             <br>
         
             <input type="text" id="searchInput" placeholder="Search for data">
-        
+            <div id="resultCount">Total rows: 0</div>
             <table id="dataTable">
                 <thead>
                     <tr>
@@ -297,15 +297,19 @@
         </footer>
     
 
+    
+    
     <script>
         var columnSelect = document.getElementById("columnSelect");
         var input = document.getElementById("searchInput");
         var table = document.getElementById("dataTable");
+        var resultCount = document.getElementById("resultCount");
 
         input.addEventListener("input", function () {
             var filter = input.value.toUpperCase();
             var columnIndex = parseInt(columnSelect.value);
             var rows = table.getElementsByTagName("tr");
+            var visibleRowCount = 0;
 
             for (var i = 1; i < rows.length; i++) { // Start from index 1 to skip the header row
                 var cells = rows[i].getElementsByTagName("td");
@@ -313,10 +317,13 @@
 
                 if (cellText.toUpperCase().indexOf(filter) > -1) {
                     rows[i].style.display = "";
+                    visibleRowCount++;
                 } else {
                     rows[i].style.display = "none";
                 }
             }
+
+            resultCount.textContent = "Total rows: " + visibleRowCount;
         });
     </script>
 
