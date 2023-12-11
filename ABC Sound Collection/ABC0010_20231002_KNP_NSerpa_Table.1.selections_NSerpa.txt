@@ -1,0 +1,5 @@
+Selection	View	Channel	Begin Time (s)	End Time (s)	Low Freq (Hz)	High Freq (Hz)	Delta Time (s)	Comment
+1	Spectrogram 1	1	13.846870365	13.962172676	553.409	3681.375	0.1153	
+2	Spectrogram 1	1	19.611985931	19.704227781	505.287	3284.364	0.0922	
+3	Spectrogram 1	1	15.299679488	18.482023280	204.521	1732.412	3.1823	Car noise
+4	Spectrogram 1	1	18.348863947	18.452636027	288.735	1600.075	0.1038	
