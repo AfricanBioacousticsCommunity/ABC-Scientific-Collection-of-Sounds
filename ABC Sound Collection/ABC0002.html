@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Scientific Sound Collection</title>
+    <style>
+        body {
+            margin: 20px;
+            margin-right: 20px;
+            padding: 0;
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;            
+        }
+
+        main {
+            flex: 1;
+            flex-direction: column;
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 10px 0;
+            
+        }
+        h2 {
+            margin: 10px 0;
+            font-size: 30px;
+            
+        }
+        h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        aside {
+            width: 300px; /* Adjust the width of your sidebar as needed */
+            background-color: #2c3e50; /* Sidebar background color */
+            color: #fff; /* Sidebar text color */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: #000;/* Black text color for the table */
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #7abeeb; /* Button color */
+            color: #fff; /* Text color */
+            border-radius: 5px;
+        }
+
+        /* Hover effect */
+        .button-link:hover {
+            background-color: #2980b9; /* Change color on hover */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        .column {
+            padding: 10px;
+            text-align: left;
+
+        }
+        iframe {
+            border: none;  /* Remove the border */
+            margin: 0;  /* Remove margin */
+            padding: 0;  /* Remove padding */
+        }
+
+        
+
+    </style>
+</head>
+<body>   
+
+    <header>
+        <figure>
+            <!-- Your figure goes here -->
+            <img src="ABC LOGO transparent - simple.png" alt="ABC logo" width="300" height="300">
+        </figure>
+        <h1>Scientific Collection of Sounds of the African Bioacoustics Community</h1>
+    </header>
+
+    <section> 
+        <div class="container">
+            <div class="column">
+                <h2>ABC0002</h2>
+                <figure>
+                    <!-- Your figure goes here -->
+                    <img src="ABC0002.jpg" alt="ABC0002" width="300" height="300">
+                </figure>
+                <audio controls><source src="path_to_sound_file.wav" type="audio/mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div class="column">
+                
+                <h3>Taxonomy</b></h3>
+                    <b>Common name</b>: African Elephant<br>
+                    <b>Scientific name</b>: <i>Loxodonta africana</i><br>
+                    <b>Family</b>: Elephantidae<br>
+                    <b>Order</b>: Proboscidea<br>
+                    <b>Class</b>: Mammalia<br>
+                <h3><b>Recording details</b></h3>
+                    <b>Secondary species</b>: -<br>
+                    <b>Tertiary species</b>: -<br>
+                    <b>Soundscape</b>: -<br>
+                    <b>Equipment</b>: Canon EOS 650D without external mic, Canon EOS 8D with Shure VP83<br>
+                    <b>Recorder</b>: NSerpa, GFrainer <br>
+                    <b>Annotation</b>: NSerpa<br>
+                <h3><b>Weather</b></h3>
+                    <b>Wind speed</b>: -<br>
+                    <b>Cloud cover</b>: -<br>
+                    <b>Temperature</b>: -<br>
+
+            </div>
+
+            <div class="column">
+                <h3>Location</b></h3>
+                <b>Locality</b>: Kruger National Park<br>
+                <b>Date</b>:14/10/2022<br>
+                <b>Time</b>: 10:33:00<br><br>
+                <iframe src="ABC0002_map.html" width="500" height="300" allowfullscreen="True" ></iframe>
+            </div> 
+           
+            <div style="clear: both;"></div> 
+        </div>       
+                                                        
+            <iframe width="700" height="500" src="https://www.youtube.com/embed/XXXXX/"></iframe>
+            
+            <br><br><a href="https://africanbioacousticscommunity.github.io/ABC-Sound-Collection.github.io/" class="button-link"><b>Back to ABC Collection</b></a>
+        
+           
+            <p><b>Support:</b></p>
+            <figure>
+                <!-- Your figure goes here -->
+                <img src="RLF_logo1.jpg" alt="RLF_logo">
+            </figure>
+
+    </section>
+            
+            
+    
+    
+        <footer>
+            <p>Website © 2023 African Bioacoustics Community<br>Recordings © the recorders - see details for each catalogue number</p>
+        </footer>
+    
+    
+    
+    
+    <script>
+        var columnSelect = document.getElementById("columnSelect");
+        var input = document.getElementById("searchInput");
+        var table = document.getElementById("dataTable");
+        var resultCount = document.getElementById("resultCount");
+
+        input.addEventListener("input", function () {
+            var filter = input.value.toUpperCase();
+            var columnIndex = parseInt(columnSelect.value);
+            var rows = table.getElementsByTagName("tr");
+            var visibleRowCount = 0;
+
+            for (var i = 1; i < rows.length; i++) { // Start from index 1 to skip the header row
+                var cells = rows[i].getElementsByTagName("td");
+                var cellText = cells[columnIndex].textContent || cells[columnIndex].innerText;
+
+                if (cellText.toUpperCase().indexOf(filter) > -1) {
+                    rows[i].style.display = "";
+                    visibleRowCount++;
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+
+            resultCount.textContent = "Total rows: " + visibleRowCount;
+        });
+    </script>
+
+</body>
+</html>
