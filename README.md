@@ -1,4 +1,4 @@
 ![ABC](page_head.jpg)
-# ABC Scientific Collection of Sounds
+# Scientific Collection of Sounds of the African Bioacoustics Community
 
 Access the Scientific Collection of Sounds [here](https://africanbioacousticscommunity.github.io/ABC-Sound-Collection.github.io/).
