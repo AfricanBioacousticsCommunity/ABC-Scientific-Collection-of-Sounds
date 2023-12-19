@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Scientific Sound Collection</title>
+    <style>
+        body {
+            margin: 20px;
+            margin-right: 20px;
+            padding: 0;
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;            
+        }
+
+        main {
+            flex: 1;
+            flex-direction: column;
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 10px 0;
+            text-align: center
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        aside {
+            width: 300px; /* Adjust the width of your sidebar as needed */
+            background-color: #2c3e50; /* Sidebar background color */
+            color: #fff; /* Sidebar text color */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: #000;/* Black text color for the table */
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: space-between;
+            max-width: 4000px;
+            margin: 0 auto;
+            text-align: left;
+            
+        }
+        .column {
+            padding: 10px;
+            text-align: left;
+
+        }
+        iframe {
+            border: none;  /* Remove the border */
+            margin: 0;  /* Remove margin */
+            padding: 0;  /* Remove padding */
+            
+        }
+        .map-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>   
+
+    <header>
+        <figure>
+            <!-- Your figure goes here -->
+            <img src="ABC LOGO transparent - simple.png" alt="ABC logo" width="300" height="300">
+        </figure>
+        <h1>Scientific Collection of Sounds of the African Bioacoustics Community</h1>
+    </header>
+
+    <section>
+             
+            <p>Welcome to the Scientific Collection of Sounds of the African Bioacoustics Community. Here you can explore the first dedicated and freely available source of bioacoustic data from southern Africa.
+            <p>Our objective as <a href="https://www.africanbioacoustics.org/">African Bioacoustics Community</a> is to promote and advance bioacoustics research across Africa. Currently, the absence in the representation of African birds, mammals and fishes species in global sound libraries hinders the use of automated species classification in academic research, applied acoustic monitoring and popular citizen science apps. We are building a comprehensive sound library that serves as a cornerstone for passive acoustic monitoring (PAM) by collecting, collating, and archiving acoustic data on South African wildlife. It can facilitate wide-ranging, low-cost data collection through public involvement, providing a critical tool for scientists, wildlife managers, and community scientists/members to contribute actively to conservation efforts.</p>
+            <p>The project also captures moments beyond their sounds. This scientific collection also counts with videos and photographs complementing the high-quality acoustic data. These endeavors inspire and fuel conservation activities while laying the groundwork for future research questions for African-based students. Contact us for further information, and let's create a symphony of knowledge together. For more information <a href="mailto:africanbioacoustics@gmail.com">contact us</a>.</p> 
+                   
+            
+            <h1>Map of Sightings</h1>
+            <div class="map-container">
+                <iframe src="ABC_Collection_map.html" width="1000" height="400" allowfullscreen="True"></iframe>
+            </div>
+            
+        
+            <label for="columnSelect">Select Column:</label>
+            <select id="columnSelect">
+                <option value="0">Catalogue No</option>
+                <option value="1">Popular name</option>
+                <option value="2">Scientific name</option>
+                <option value="3">Family</option>
+                <option value="4">Order</option>
+                <option value="5">Class</option>
+                <option value="6">Date</option>
+                <option value="7">Locality</option>
+                
+                
+            </select>
+        
+            <br>
+        
+            <input type="text" id="searchInput" placeholder="Search for data">
+            <div id="resultCount">Search results: 0</div>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Catalogue No</th>
+                        <th>Popular name</th>
+                        <th>Scientific name</th>
+                        <th>Family</th>
+                        <th>Order</th>
+                        <th>Class</th>
+                        <th>Date</th>
+                        <th>Locality</th>
+                        <th>Play</th>
+                        <th>Annotation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0001.html">ABC0001</a></td>
+                        <td>African Wild Dog</td>
+                        <td><i>Lycaon pictus</i></td>
+                        <td>Canidae</td>
+                        <td>Carnivora</td>
+                        <td>Mammalia</td>
+                        <td>2022/10/11</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0001_20231111_KNP_NSerpaGFrainer_edited.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        <td><a href="ABC Sound Collection/ABC0001_20231111_KNP_NSerpaGFrainer.Table.1.selections_GFrainer.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0002.html">ABC0002</a></td>
+                        <td>African Elephant</td>
+                        <td><i>Loxodonta africana</i></td>
+                        <td>Elephantidae</td>
+                        <td>Proboscidea</td>
+                        <td>Mammalia</td>
+                        <td>2022/10/14</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0002_20231114_KNP_GFrainerNSerpa.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0002_20221114_KNP_GFrainerNSerpa.Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0003.html">ABC0003</a></td>
+                        <td>Red-crested Korhaan</td>
+                        <td><i>Lophotis ruficrista</i></td>
+                        <td>Otididae</td>
+                        <td>Otidiformes</td>
+                        <td>Aves</td>
+                        <td>2022/10/24</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0003_20221024_KNP_RProbert.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0003_20221024_KNP_RProbert.Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0004.html">ABC0004</a></td>
+                        <td>Dark-capped Bulbul</td>
+                        <td><i>Pycnonotus tricolor</i></td>
+                        <td>Pycnonotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0004_20231002_KNP_AKaramitsos.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0004_20231002_KNP_AKaramitsos.Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0005.html">ABC0005</a></td>
+                        <td>Dark-capped Bulbul</td>
+                        <td><i>Pycnonotus tricolor</i></td>
+                        <td>Pycnonotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0005_20231002_KNP_AKaramitsos.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0005_20231002_KNP_AKaramitsos.Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0006.html">ABC0006</a></td>
+                        <td>Black-backed Puffback</td>
+                        <td><i>Dryoscopus cubla</i></td>
+                        <td>Malaconotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0006_20231002_KNP_AKaramitsos.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0006_20231002_KNP_AKaramitsos.Table.1.selections.NSerpatxt.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0007.html">ABC0007</a></td>
+                        <td>Fork-tailed Drongo</td>
+                        <td><i>Dicrurus adsimilis</i></td>
+                        <td>Dicruridae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0007_20231002_KNP_NSerpa.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0007_20231002_KNP_NSerpa.Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0008.html">ABC0008</a></td>
+                        <td>Grey Go-away-bird</td>
+                        <td><i>Crinifer concolor</i></td>
+                        <td>Musophagidae</td>
+                        <td>Musophagiformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0008_20231002_KNP_NSerpa.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0008_20231002_KNP_NSerpa_Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0009.html">ABC0009</a></td>
+                        <td>Magpie Shrike</td>
+                        <td><i>Urolestes melanoleucus</i></td>
+                        <td>Laniidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0009_20231002_KNP_NSerpa_GitHub_less than 25MB.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0009_20231002_KNP_NSerpa_Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0010.html">ABC0010</a></td>
+                        <td>Lilac-breasted Roller</td>
+                        <td><i>Coracias caudatus</i></td>
+                        <td>Coraciidae</td>
+                        <td>Coraciiformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0010_20231002_KNP_NSerpa.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0010_20231002_KNP_NSerpa_Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ABC Sound Collection/ABC0011.html">ABC0011</a></td>
+                        <td>Black-crowned Tchagra</td>
+                        <td><i>Tchagra senegalus</i></td>
+                        <td>Malaconotidae</td>
+                        <td>Passeriformes</td>
+                        <td>Aves</td>
+                        <td>2023/10/02</td>
+                        <td>Kruger National Park</td>                    
+                        <td><audio controls><source src="ABC Sound Collection/ABC0011_20231002_KNP_NSerpa.wav" type="audio/mp3">Your browser does not support the audio element.</audio></td>
+                        
+                        <td><a href="ABC Sound Collection/ABC0011_20231002_KNP_NSerpa_Table.1.selections_NSerpa.txt" download>📄</a></td>
+                    </tr>
+        
+                    
+                    
+                    
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        
+            <p><b>Acknowledgements and citations</b><br>The data available in this collection is under CC licenses, thus it is recommended mentioning the recordist of the audio together with the catalogue number and its stable url. We would also appreciate having a mention of the collection's url 'https://africanbioacousticscommunity.github.io/ABC-Sound-Collection.github.io' or our website 'www.africanbioacoustics.org' in your acknowledgments.</p>
+            
+            <p><b>Support:</b></p>
+            <figure>
+                <!-- Your figure goes here -->
+                <img src="RLF_logo1.jpg" alt="RLF_logo">
+            </figure>
+            
+            
+        </section>
+    
+        <footer>
+            <p>Website © 2023 African Bioacoustics Community<br>Recordings © the recorders - see details for each catalogue number</p>
+        </footer>
+    
+
+    
+    
+    <script>
+        var columnSelect = document.getElementById("columnSelect");
+        var input = document.getElementById("searchInput");
+        var table = document.getElementById("dataTable");
+        var resultCount = document.getElementById("resultCount");
+
+        input.addEventListener("input", function () {
+            var filter = input.value.toUpperCase();
+            var columnIndex = parseInt(columnSelect.value);
+            var rows = table.getElementsByTagName("tr");
+            var visibleRowCount = 0;
+
+            for (var i = 1; i < rows.length; i++) { // Start from index 1 to skip the header row
+                var cells = rows[i].getElementsByTagName("td");
+                var cellText = cells[columnIndex].textContent || cells[columnIndex].innerText;
+
+                if (cellText.toUpperCase().indexOf(filter) > -1) {
+                    rows[i].style.display = "";
+                    visibleRowCount++;
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+
+            resultCount.textContent = "Total rows: " + visibleRowCount;
+        });
+    </script>
+
+</body>
+</html>
